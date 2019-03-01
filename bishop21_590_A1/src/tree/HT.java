@@ -1,9 +1,12 @@
 package tree;
 
+import java.util.Map;
+
 public class HT implements TreeInterface{
 	public CharLenPair root;
 	public CharLenPair curr;
 	public CharFreq froot;
+	public CharFreq temp;
 	
 	public boolean[] loc;
 	
@@ -78,42 +81,78 @@ public class HT implements TreeInterface{
 	}
 
 	public String findCode(CharFreq cf) {
+		String str = "";
 		int depth = 0;
+		temp = cf;
+		System.out.println("Navigating to...");
+		
 		if(loc == null) {			//if the tree is new....
-			CharFreq temp;
-			while(cf.len==-1) {
-				temp = cf.leftChild;
+			while(temp.leftChild!= null) {
+				temp = temp.leftChild;
+				str+= "0";
 				depth++;
+				System.out.println(temp);
 			}
 			loc = new boolean[depth];
+			addOne(loc);
+			return temp.Char + str;
 		}
 		
-		else {	
-			/*//if the tree is established...
-			if(cf.codeLen > loc.length) {
-				loc = appendZeros(loc, clp.codeLen);
+		else {						//if the tree already has a loc[] 
+			for(int i=0;i<loc.length;i++) {
+				System.out.print(loc[i]);
 			}
-			*/
-			//System.out.println(clp.Char);
-			//for(int i=0;i<clp.codeLen;i++) {
-				//System.out.println(loc[i]);
-			//}
-			for(int i=0;i<depth;i++) {
-				if(!loc[i]) {
-					if(curr.leftChild == null) {curr.leftChild = new CharLenPair('y',-1);} //null check
-					curr = curr.leftChild;
+			System.out.println();
+			int i=0;
+			while(true) {
+				
+				boolean direction;
+				try {direction = loc[i];}
+				catch(ArrayIndexOutOfBoundsException e) {
+					loc = appendZeros(loc, loc.length+1);
+	//				System.out.println("Trying again with extra 0");
 				}
-				else {
-					if(curr.rightChild == null) {curr.rightChild = new CharLenPair('y',-1);} //null check
-					curr = curr.rightChild;
+				finally {direction = loc[i];}
+				
+				if(!direction) {								//if the next node is left
+	//				System.out.println("Navigating left...");
+					if(temp.leftChild == null) {			//make sure left isn't null
+						System.out.println("Left is null! Checking if leaf.");
+	//					//if "left" is null, is "left" a leaf or do we need to add zeroes?
+						if(temp.rightChild == null) {	//leaf? add a 0 and we're done
+							str+="0";
+	//						System.out.println("Left is leaf. Printing char and code.");
+							break;
+						} 
+						else{		 //not a leaf? try again with corrected loc[]
+							loc = appendZeros(loc, loc.length+1);
+	//						System.out.println("Left is not leaf. Trying again.");
+						}
+					} 
+					temp = temp.leftChild;					//if left is not null, traverse left
 				}
+				else {										//if the next node is right	
+	//				System.out.println("Navigating right...");
+						if(temp.rightChild == null) {			//make sure right isn't null
+	//						System.out.println("Right is null! Checking if leaf.");
+							//if "right" is null, is "right" a leaf or do we need to add zeroes?
+							if(temp.leftChild == null) {	//leaf? add a 1 and we're done
+								str+="1";
+	//							System.out.println("Right is leaf. Printing char and code.");
+								break;
+							} 
+							else{		 //not a leaf? try again with corrected loc[]
+								loc = appendZeros(loc, loc.length+1);
+	//							System.out.println("Right is not leaf. Trying again.");
+							}
+						} 
+						temp = temp.rightChild;					//if right is not null, traverse right
+				}
+				i++;
 			}
-			//curr.sym = clp.sym;
-			//curr.codeLen = clp.codeLen;
 		}
 		addOne(loc);
-		return null;
+		return temp.Char + str;
 	}
-	
-	
-}
+}	
+

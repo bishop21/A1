@@ -45,7 +45,7 @@ public class Main {
 			if(isbs.next(1) == 0) {curr = curr.leftChild;}
 			else{curr = curr.rightChild;}
 			if(curr.codeLen>0) {								//when we reach a leaf, we print 
-				System.out.print(curr.sym);					//its associated char...
+				//System.out.print(curr.sym);					//its associated char...
 				osbs.write(curr.sym, 8);					//write it to an output file...
 				curr = huffy.root;							//and return to the tree root for the next char
 			}
@@ -103,7 +103,6 @@ public class Main {
 				entropy -= charEntropy * frequency;
 			}
 			pq.add(tempNode);
-			
 		}
 		//System.out.println("Total file entropy: " + entropy);
 		
@@ -114,23 +113,22 @@ public class Main {
 			CharFreq righty = pq.poll();
 			CharFreq parent = new CharFreq(lefty,righty);
 			pq.add(parent);
-			//since it's a priority queue, it should resort as it adds
+			//since it's a priority queue, it should re-sort as it adds
 		}
 		Map<Integer, String> cmap = new HashMap<Integer, String>();
 		ArrayList<CharLenPair> charz = new ArrayList<CharLenPair>();
 		CharFreq root = pq.poll();
-		//System.out.println(root.Char + "!");
-		//System.out.println(root.freq);
 		
 		// Start at root and walk down to each leaf, forming code string along the
 		// way (0 means left, 1 means right). Insert mapping between symbol value and
 		// code string into cmap when each leaf is reached.
-		HT encodeTree = new HT();
-		encodeTree.froot = pq.poll();
-		//encodeTree.findCode(pq.poll());
 		
+		HT encodeTree = new HT();
+		encodeTree.froot = root;
 		for(int i=0;i<256;i++) {
-			CharFreq.findLen(pq.poll(), 0);
+			String out = encodeTree.findCode(encodeTree.froot);
+			cmap.put((int)out.charAt(0), out.substring(1));
+			System.out.println(out);
 		}
 		Collections.sort(charz);	//sort the arraylist
 		
