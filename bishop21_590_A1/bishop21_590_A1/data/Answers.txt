@@ -1,0 +1,276 @@
+1. The output is printed to the console display when the program is run. Just run the main class.
+To stop printing, comment out line 48 in main
+
+2. Uncomment line 100 to see this produced
+
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char: 	 probability: 0.0
+char: 
+ probability: 0.0032758625626752116
+char:  probability: 0.0
+char:  probability: 0.0
+char: 
+ probability: 0.0032758625626752116
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:   probability: 0.023387768776791773
+char: ! probability: 7.015614753981004E-5
+char: " probability: 0.0014303263549442903
+char: # probability: 0.0
+char: $ probability: 0.0
+char: % probability: 0.0
+char: & probability: 1.4317581130573477E-6
+char: ' probability: 4.109145784474588E-4
+char: ( probability: 1.4317581130573477E-6
+char: ) probability: 1.4317581130573477E-6
+char: * probability: 0.0
+char: + probability: 0.0
+char: , probability: 0.0018584220307484372
+char: - probability: 3.4219018902070607E-4
+char: . probability: 0.0016637029273726379
+char: / probability: 0.0
+char: 0 probability: 2.0044613582802866E-5
+char: 1 probability: 8.590548678344086E-6
+char: 2 probability: 2.8635162261146954E-6
+char: 3 probability: 4.295274339172043E-6
+char: 4 probability: 5.727032452229391E-6
+char: 5 probability: 4.295274339172043E-6
+char: 6 probability: 0.0
+char: 7 probability: 4.295274339172043E-6
+char: 8 probability: 1.0022306791401433E-5
+char: 9 probability: 4.295274339172043E-6
+char: : probability: 1.2885823017516129E-5
+char: ; probability: 4.724801773089247E-5
+char: < probability: 0.0
+char: = probability: 0.0
+char: > probability: 0.0
+char: ? probability: 1.8469679658439784E-4
+char: @ probability: 0.0
+char: A probability: 2.519894278980932E-4
+char: B probability: 1.4031229507962008E-4
+char: C probability: 1.0022306791401433E-4
+char: D probability: 7.158790565286739E-5
+char: E probability: 1.0595010036624373E-4
+char: F probability: 5.583856640923656E-5
+char: G probability: 4.2952743391720426E-5
+char: H probability: 3.3216788222930466E-4
+char: I probability: 0.0010108212278184875
+char: J probability: 5.440680829617921E-5
+char: K probability: 3.4362194713376344E-5
+char: L probability: 8.73372448964982E-5
+char: M probability: 2.0903668450637276E-4
+char: N probability: 8.73372448964982E-5
+char: O probability: 7.731493810509678E-5
+char: P probability: 4.008922716560573E-5
+char: Q probability: 4.295274339172043E-6
+char: R probability: 5.7270324522293904E-5
+char: S probability: 2.1476371695860214E-4
+char: T probability: 3.2644084977707526E-4
+char: U probability: 1.5749339243630825E-5
+char: V probability: 3.4362194713376344E-5
+char: W probability: 2.3624008865446235E-4
+char: X probability: 5.727032452229391E-6
+char: Y probability: 1.3315350451433334E-4
+char: Z probability: 1.4317581130573477E-6
+char: [ probability: 0.0
+char: \ probability: 0.0
+char: ] probability: 0.0
+char: ^ probability: 0.0
+char: _ probability: 0.0
+char: ` probability: 0.0
+char: a probability: 0.008484598577977842
+char: b probability: 0.0014074182251353727
+char: c probability: 0.002565710538598767
+char: d probability: 0.0044771076195303265
+char: e probability: 0.013021840038256577
+char: f probability: 0.002141910137133792
+char: g probability: 0.0019142605971576739
+char: h probability: 0.006627608305342462
+char: i probability: 0.006448638541210294
+char: j probability: 1.1740416527070251E-4
+char: k probability: 8.561913516082939E-4
+char: l probability: 0.004130622156170448
+char: m probability: 0.0028577891936624657
+char: n probability: 0.00709865672453833
+char: o probability: 0.008314219362524017
+char: p probability: 0.0017682212696258244
+char: q probability: 1.202676814968172E-4
+char: r probability: 0.005997634735597229
+char: s probability: 0.006460092606114753
+char: t probability: 0.009204772908845688
+char: u probability: 0.0033717903562500537
+char: v probability: 0.001038024631966577
+char: w probability: 0.002554256473694308
+char: x probability: 1.5033460187102151E-4
+char: y probability: 0.0022220885914650034
+char: z probability: 5.2975050183121866E-5
+char: { probability: 0.0
+char: | probability: 0.0
+char: } probability: 0.0
+char: ~ probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:  probability: 0.0
+char:   probability: 0.0
+char: ¡ probability: 0.0
+char: ¢ probability: 0.0
+char: £ probability: 0.0
+char: ¤ probability: 0.0
+char: ¥ probability: 0.0
+char: ¦ probability: 0.0
+char: § probability: 0.0
+char: ¨ probability: 0.0
+char: © probability: 5.727032452229391E-6
+char: ª probability: 0.0
+char: « probability: 0.0
+char: ¬ probability: 0.0
+char: ­ probability: 0.0
+char: ® probability: 0.0
+char: ¯ probability: 0.0
+char: ° probability: 0.0
+char: ± probability: 0.0
+char: ² probability: 0.0
+char: ³ probability: 0.0
+char: ´ probability: 0.0
+char: µ probability: 0.0
+char: ¶ probability: 0.0
+char: · probability: 0.0
+char: ¸ probability: 0.0
+char: ¹ probability: 0.0
+char: º probability: 0.0
+char: » probability: 0.0
+char: ¼ probability: 0.0
+char: ½ probability: 0.0
+char: ¾ probability: 0.0
+char: ¿ probability: 0.0
+char: À probability: 0.0
+char: Á probability: 0.0
+char: Â probability: 0.0
+char: Ã probability: 5.727032452229391E-6
+char: Ä probability: 0.0
+char: Å probability: 0.0
+char: Æ probability: 0.0
+char: Ç probability: 0.0
+char: È probability: 0.0
+char: É probability: 0.0
+char: Ê probability: 0.0
+char: Ë probability: 0.0
+char: Ì probability: 0.0
+char: Í probability: 0.0
+char: Î probability: 0.0
+char: Ï probability: 0.0
+char: Ð probability: 0.0
+char: Ñ probability: 0.0
+char: Ò probability: 0.0
+char: Ó probability: 0.0
+char: Ô probability: 0.0
+char: Õ probability: 0.0
+char: Ö probability: 0.0
+char: × probability: 0.0
+char: Ø probability: 0.0
+char: Ù probability: 0.0
+char: Ú probability: 0.0
+char: Û probability: 0.0
+char: Ü probability: 0.0
+char: Ý probability: 0.0
+char: Þ probability: 0.0
+char: ß probability: 0.0
+char: à probability: 0.0
+char: á probability: 0.0
+char: â probability: 0.0
+char: ã probability: 0.0
+char: ä probability: 0.0
+char: å probability: 0.0
+char: æ probability: 0.0
+char: ç probability: 0.0
+char: è probability: 0.0
+char: é probability: 0.0
+char: ê probability: 0.0
+char: ë probability: 0.0
+char: ì probability: 0.0
+char: í probability: 0.0
+char: î probability: 0.0
+char: ï probability: 0.0
+char: ð probability: 0.0
+char: ñ probability: 0.0
+char: ò probability: 0.0
+char: ó probability: 0.0
+char: ô probability: 0.0
+char: õ probability: 0.0
+char: ö probability: 0.0
+char: ÷ probability: 0.0
+char: ø probability: 0.0
+char: ù probability: 0.0
+char: ú probability: 0.0
+char: û probability: 0.0
+char: ü probability: 0.0
+char: ý probability: 0.0
+char: þ probability: 0.0
+char: ÿ probability: 0.0
+
+
+3. The total entropy of the file is 736,977.4 bits, or 92.12 KB
+
+4. The provided compressed file is 349,484 - 260 header = 349,224 bytes
+349,224 bytes * 8 = 2793792 bits / 698442 symbols = 
+4.0000 bits per symbol
+
+5. The re-encoded file is saved as “MVT-compressed.dat”
+
+6. 
+
+7. 
